@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">የመጀመሪያ ጃቫ</string>
+    <string name="enter_name">ስምዎን ያስገቡ</string>
+    <string name="submit">አስገባ</string>
+    <string name="hello">ሰላም!</string>
+    <string name="please_name">እባኮትን ስምዎን ያስገቡ</string>
+
+    <string name="sign">ይግቡ</string>
+    <string name="user_name">ስምዎ</string>
+
+
+</resources>

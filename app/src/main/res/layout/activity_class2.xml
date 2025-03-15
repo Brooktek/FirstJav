@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingLeft="25dp"
+    tools:context=".Class2">
+
+    <TextView
+        android:id="@+id/tvSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:textSize="20sp"
+        android:layout_below="@id/tvSign"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tvPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20sp"
+        android:layout_below="@id/tvUser"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvUser"
+        android:layout_alignBaseline="@id/tvUser"
+        />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvPass"
+        android:layout_alignBaseline="@id/tvPass" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_below="@+id/tvPass"
+        android:layout_marginTop="50dp"
+        android:onClick="onsign"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -36,10 +36,10 @@
         android:layout_weight="1"/>
 
     <Button
-        android:id="@+id/btn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Send"
+        android:onClick="onsend"
         android:layout_gravity="end"/>
 
 </LinearLayout>

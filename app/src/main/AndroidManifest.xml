@@ -13,6 +13,14 @@
         android:theme="@style/Theme.FirstJav"
         tools:targetApi="31">
         <activity
+            android:name=".Class"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".classs5"
+            android:exported="false" />
+        <activity
             android:name=".class4"
             android:exported="false" />
         <activity
@@ -25,10 +33,10 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Class"
+            android:name=".Class2"
             android:exported="false" />
         <activity
-            android:name=".Class2"
+            android:name=".intent"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

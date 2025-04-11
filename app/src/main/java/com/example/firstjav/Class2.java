@@ -80,7 +80,7 @@ public class Class2 extends AppCompatActivity {
 
     public void onsign(View v){
 
-        Toast t = Toast.makeText(this, etUser.getText().toString()+"\n"+etPass.getText().toString(), Toast.LENGTH_SHORT);
+    Toast t = Toast.makeText(this, etUser.getText().toString()+"\n"+etPass.getText().toString(), Toast.LENGTH_SHORT);
         t.show();
 
     }

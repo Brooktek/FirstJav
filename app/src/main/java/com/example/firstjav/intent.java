@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -12,12 +14,22 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.firstjav.databinding.ActivityIntentBinding;
+
 public class intent extends AppCompatActivity {
+
+    ActivityIntentBinding binding;
+    String[] data = {"brook", "abel", "bert"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intent);
+        binding = ActivityIntentBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        ArrayAdapter<String> adapte= new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
+        binding.listItem.setAdapter(adapte);
+
+        binding.textViewDisplay.setText(R.string.hello_b);
 
     }
 

@@ -8,5 +8,13 @@
 
     <string name="sign">Sign In</string>
     <string name="user_name">User Name</string>
+    <string name="hello_b" translatable="false">Hello! my name is brook</string>
+
+
+    <string-array name="options">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Stores</item>
+    </string-array>
 
 </resources>

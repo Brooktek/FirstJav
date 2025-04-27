@@ -22,7 +22,7 @@
             android:name=".Drinkcata"
             android:exported="false" />
         <activity
-            android:name=".List"
+            android:name=".intent"
             android:exported="false" />
         <activity
             android:name=".Class"
@@ -46,7 +46,7 @@
             android:name=".Class2"
             android:exported="false" />
         <activity
-            android:name=".intent"
+            android:name=".List"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

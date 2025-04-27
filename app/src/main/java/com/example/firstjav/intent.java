@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,16 +29,24 @@ public class intent extends AppCompatActivity {
     String[] color = {"red","blue","green"};
     boolean[] check = {false, false, false};
 
+    String[] data1;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityIntentBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        data1= getResources().getStringArray(R.array.options);
+
         ArrayAdapter<String> adapte= new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
         binding.listItem.setAdapter(adapte);
 
-        binding.textViewDisplay.setText(R.string.hello_b);
-
+        Handler handler= new Handler();
+        handler.postDelayed(()->{
+            binding.
+        }
+        );
     }
 
    public void onStartClicked (View v){
